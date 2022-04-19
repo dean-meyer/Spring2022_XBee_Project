@@ -1,5 +1,5 @@
-const int GREEN = 12;  //assigns Green LED to pin 12
-const int RED = 10;    //assigns Red LED to pin 10
+const int GREEN = 12;  //assigns green LED to pin 12
+const int RED = 10;    //assigns red LED to pin 10
 char data = '0';       //data variable set to 0 initially
 
 
@@ -14,12 +14,12 @@ void setup()
 
 void loop() 
 {
-  if (Serial.available() > 0) //if statement to beging looking for data from transmitter
+  if (Serial.available() > 0) //begin looking for data from transmitter
   {
-    data = Serial.read(); //read data from serial comm to the data variable
+    data = Serial.read(); //read data from serial communication to the data variable
     Serial.print(data);
 
-    //used LEDs to indicate the current GPS fix status on the local circuit at a quick glance
+    //uses LEDs to indicate the current GPS fix status on the local circuit at a quick glance
     //red LED on means no fix, green LED on means good fix
     
     //If fix > 0, Green LED on and Red off
