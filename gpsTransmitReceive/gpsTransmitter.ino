@@ -58,9 +58,9 @@ void loop() {
     Serial.println(" ");
 
   //latitude conversion from DDMM.MMMMM to decimal degrees
-  degWhole=float(int(GPS.latitude/100));       //divides by 100 and converts to int to give the whole degree part of latitude
-  degDec = (GPS.latitude - degWhole*100)/60;   //give fractional part of latitude
-  deg = degWhole + degDec;                     //gives complete decimal form of latitude
+  degWhole=float(int(GPS.latitude/100));       //divides by 100 and converts to int to give the whole degree part of the latitude
+  degDec = (GPS.latitude - degWhole*100)/60;   //give fractional part of the latitude
+  deg = degWhole + degDec;                     //gives complete decimal form of the latitude
   
   //changes latitude to negative value if in southern hemisphere
   if (GPS.lat=='S') {  
@@ -71,9 +71,9 @@ void loop() {
   Serial.print(","); 
 
   //longitude conversion from DDMM.MMMMM to decimal degrees
-  degWhole=float(int(GPS.longitude/100));       //divides by 100 and converts to int to give the whole degree part of latitude
-  degDec = (GPS.longitude - degWhole*100)/60;   //give fractional part of longitude
-  deg = degWhole + degDec;                      //gives complete decimal form of longitude
+  degWhole=float(int(GPS.longitude/100));       //divides by 100 and converts to int to give the whole degree part of the longitude
+  degDec = (GPS.longitude - degWhole*100)/60;   //give fractional part of the longitude
+  deg = degWhole + degDec;                      //gives complete decimal form of the longitude
   
   //changes latitude to negative value if in western hemisphere
   if (GPS.lon=='W') {  
