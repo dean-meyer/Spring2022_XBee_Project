@@ -63,7 +63,7 @@ void loop() {
   if (GPS.lat=='S') {  
     deg= (-1)*deg;
   }
-  //Print longitude data
+  //print longitude data
   Serial.print(deg,4); 
   Serial.print(","); 
 
@@ -80,7 +80,7 @@ void loop() {
   Serial.print(deg,4);
   Serial.println(",");
 
-  //other data
+  //print other data
   Serial.print("Altitude: ");
   Serial.print(GPS.altitude);        //alititude
   Serial.print(" m, ");
