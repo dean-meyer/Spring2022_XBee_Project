@@ -1,9 +1,9 @@
 //This code drew heavily on the lessons provided by Paul McWhorter from toptechboy.com
 
 #include <Adafruit_GPS.h>      //install the adafruit GPS library
-#include <SoftwareSerial.h>    //load the Software Serial library
-SoftwareSerial mySerial(8,7);  //initialize the Software Serial port on Arduino pins 7 & 8
-Adafruit_GPS GPS(&mySerial);   //create the GPS Object
+#include <SoftwareSerial.h>    //load the software serial library
+SoftwareSerial mySerial(8,7);  //initialize the software serial port on Arduino pins 7 & 8
+Adafruit_GPS GPS(&mySerial);   //create the GPS object
  
 String NMEA1;   //variable for first NMEA sentence
 String NMEA2;   //variable for second NMEA sentence
